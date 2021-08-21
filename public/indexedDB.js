@@ -46,4 +46,5 @@ function checkDatabase() {
       }
     };
 }
-  
+
+window.addEventListener('online', checkDatabase);
