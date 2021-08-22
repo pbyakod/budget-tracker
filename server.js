@@ -15,10 +15,16 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost/budget", {
-  useNewUrlParser: true,
+const MONGODB_URI = 'mongodb+srv://user-1:passwordauth123@cluster0.y5cwp.mongodb.net/budget?retryWrites=true&w=majority'
+
+mongoose.connect(MONGODB_URI || "mongodb://localhost/budget", 
+  { 
+  useNewUrlParser: true, 
+  useUnifiedTopology: true,
+  useCreateIndex: true,
   useFindAndModify: false
-});
+  }
+);
 
 // routes
 app.use(require("./routes/api.js"));
