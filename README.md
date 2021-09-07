@@ -41,7 +41,7 @@ npm run start
 
 If you'd simply like to view the deployed application on your local browser, click the link below. 
 
-https://rocky-headland-17021.herokuapp.com/
+https://pbyakod-budget-tracker.herokuapp.com/
 
 ## Technologies Used
 
